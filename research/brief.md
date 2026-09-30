@@ -16,10 +16,10 @@ Its style uses assertive editorial language, oversized sans-serif type, thin gri
 
 Proposed copy: “AI can build. People make it work.” This translates the manifesto toward the team doing the work. Follow it with verified scale and a plain explanation of the operation.
 
-1. Thesis + scale + open roles.
-2. A compact map of what 8x actually operates.
-3. How work happens, with concrete expectations and tradeoffs grounded in role postings or team input.
-4. Real people and work evidence; link to existing Careers clips if assets cannot be reused.
+1. Thesis + real team imagery + scale + open roles.
+2. Real people and team stories, linked to the existing Careers clips.
+3. A tangible example of how 8x Social coordinates people, plus a compact map of the other 8x businesses.
+4. Concrete expectations and tradeoffs grounded in the Product Designer posting.
 5. Honest self-selection: who thrives and who may prefer another environment.
 6. Practical application details and live roles linked to 8x Careers.
 
