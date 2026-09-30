@@ -11,8 +11,24 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles.css" />
   <link rel="stylesheet" href="./v2.css" />
+  <link rel="stylesheet" href="./motion.css" />
+  <script>
+    (() => {
+      const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!reduced) document.documentElement.classList.add('motion-enabled');
+      try {
+        if (!reduced && !sessionStorage.getItem('8x-life-intro-seen')) document.documentElement.classList.add('intro-pending');
+      } catch (_) {}
+      setTimeout(() => document.documentElement.classList.remove('intro-pending', 'intro-exiting'), 2400);
+    })();
+  </script>
 </head>
 <body>
+  <div class="intro" aria-hidden="true">
+    <div class="intro-top"><span>8x / LIFE</span><span>THE HUMAN COMPANY</span></div>
+    <div class="intro-word"><span>IN A WORLD OF AI,</span><strong>people<span>.</span></strong></div>
+    <div class="intro-bottom"><span>PEOPLE MAKE IT WORK</span><span>01 / 01</span></div>
+  </div>
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="8x life, back to top">8x<span class="brand-divider"></span><span class="brand-caption">life</span></a>

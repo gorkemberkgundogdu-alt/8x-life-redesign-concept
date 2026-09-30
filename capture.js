@@ -20,7 +20,7 @@ const shots = [
     { label: 'desktop', viewport: { width: 1440, height: 900 }, isMobile: false },
     { label: 'mobile', viewport: { width: 390, height: 844 }, isMobile: true },
   ]) {
-    const context = await browser.newContext({ viewport: device.viewport, isMobile: device.isMobile, deviceScaleFactor: 1 });
+    const context = await browser.newContext({ viewport: device.viewport, isMobile: device.isMobile, deviceScaleFactor: 1, reducedMotion: 'reduce' });
     const page = await context.newPage();
     for (const shot of shots) {
       try {

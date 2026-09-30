@@ -1,0 +1,48 @@
+:root{--motion-ease:cubic-bezier(.22,1,.36,1)}
+
+/* A brief editorial entrance, tied to the word underlined in the hero. */
+.intro{display:none;position:fixed;inset:0;z-index:100;overflow:hidden;background:var(--accent);color:var(--paper);padding:28px 3vw 25px;flex-direction:column;justify-content:space-between;pointer-events:auto}
+.skip:focus{z-index:101}
+html.intro-pending .intro,html.intro-exiting .intro{display:flex}
+html.intro-pending,html.intro-exiting{overflow:hidden}
+.intro::before{content:"";position:absolute;inset:0 3vw;background:linear-gradient(to right,transparent 24.9%,rgba(255,255,255,.13) 25%,transparent 25.1%,transparent 49.9%,rgba(255,255,255,.13) 50%,transparent 50.1%,transparent 74.9%,rgba(255,255,255,.13) 75%,transparent 75.1%);pointer-events:none}
+.intro-top,.intro-bottom{position:relative;z-index:1;display:flex;justify-content:space-between;gap:20px;font:500 12px 'DM Mono',monospace;letter-spacing:.08em}
+.intro-top{padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,.55)}
+.intro-bottom{padding-top:20px;border-top:1px solid rgba(255,255,255,.55)}
+.intro-word{position:relative;z-index:1;align-self:center;text-align:center;max-width:100%}
+.intro-word>span{display:block;margin-bottom:16px;font:500 12px 'DM Mono',monospace;letter-spacing:.09em;animation:introLabel .35s both}
+.intro-word strong{position:relative;display:block;width:max-content;max-width:100%;font:400 clamp(100px,20vw,360px)/.82 Georgia,serif;font-style:italic;letter-spacing:-.09em;animation:introWord .5s var(--motion-ease) both}
+.intro-word strong span{font-style:normal}
+.intro-word strong::after{content:"";position:absolute;left:3%;right:0;bottom:-.13em;height:7px;background:var(--paper);transform-origin:left;animation:introLine .38s .18s var(--motion-ease) both}
+html.intro-exiting .intro{animation:introCurtain .55s var(--motion-ease) both}
+@keyframes introLabel{from{opacity:0}to{opacity:1}}
+@keyframes introWord{from{opacity:0;transform:translateY(35px)}to{opacity:1;transform:translateY(0)}}
+@keyframes introLine{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes introCurtain{from{transform:translateY(0)}to{transform:translateY(-100%)}}
+
+/* The hero begins while the entrance curtain is lifting. */
+html.motion-enabled .hero h1{animation:heroRise .8s .05s var(--motion-ease) both}
+html.motion-enabled .hero-bottom{animation:heroRise .75s .2s var(--motion-ease) both}
+html.motion-enabled .hero-people{animation:heroPortraits .95s .12s var(--motion-ease) both}
+html.motion-enabled.intro-pending .hero h1,html.motion-enabled.intro-pending .hero-bottom,html.motion-enabled.intro-pending .hero-people{animation-play-state:paused}
+@keyframes heroRise{from{opacity:0;transform:translateY(36px)}to{opacity:1;transform:translateY(0)}}
+@keyframes heroPortraits{from{opacity:0;transform:translateY(45px) rotate(3deg)}to{opacity:1;transform:translateY(0) rotate(0)}}
+.hero-person-back{transform:translateY(var(--portrait-shift-back,0px)) rotate(-7deg)}
+.hero-person-front{transform:translateY(var(--portrait-shift-front,0px)) rotate(6deg)}
+
+/* Each section uses motion that follows its reading direction. */
+.motion-reveal{opacity:0;transform:translateY(28px);transition:opacity .7s var(--motion-ease),transform .7s var(--motion-ease);transition-delay:var(--reveal-delay,0ms)}
+.motion-reveal.is-visible{opacity:1;transform:translateY(0)}
+.work-step.motion-reveal{transform:translateX(-26px);transition:opacity .65s var(--motion-ease),transform .65s var(--motion-ease),background .25s,padding .25s;transition-delay:var(--reveal-delay,0ms)}
+.work-step.motion-reveal.is-visible{transform:translateX(0)}
+.surface.motion-reveal{transform:translateY(18px);transition:opacity .65s var(--motion-ease),transform .65s var(--motion-ease),background .25s,padding .25s,color .25s;transition-delay:var(--reveal-delay,0ms)}
+.surface.motion-reveal.is-visible{transform:translateY(0)}
+.quality-detail.detail-changing{animation:detailChange .28s var(--motion-ease)}
+@keyframes detailChange{from{opacity:.25;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.menu-overlay:not([hidden]){animation:menuCurtain .42s var(--motion-ease) both}
+.menu-overlay:not([hidden]) .menu-item{animation:menuRow .45s var(--motion-ease) both;animation-delay:calc(.08s + var(--menu-order,0)*.055s)}
+@keyframes menuCurtain{from{opacity:0;transform:translateY(-18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes menuRow{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+
+@media(max-width:600px){.intro{padding:22px}.intro::before{inset:0 22px}.intro-top,.intro-bottom,.intro-word>span{font-size:9px}.intro-word strong{font-size:clamp(78px,21vw,125px)}.intro-word strong::after{height:4px}}
+@media(prefers-reduced-motion:reduce){.intro{display:none!important}.motion-reveal,.work-step.motion-reveal,.surface.motion-reveal{opacity:1;transform:none;transition:none}.hero h1,.hero-bottom,.hero-people,.menu-overlay,.menu-item,.quality-detail{animation:none!important}.hero-person-back{transform:rotate(-7deg)}.hero-person-front{transform:rotate(6deg)}}

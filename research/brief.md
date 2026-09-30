@@ -31,3 +31,7 @@ The assignment frames 8x.life as a candidate site. V2's closing CTA targets a po
 ## What remains unproven
 
 The prototype uses public 8x Careers portraits and links to existing stories. It needs an approved example of a fast product decision, first-person quotes, and practical details about how the team collaborates before it can make stronger culture claims. The homepage is intentionally prioritized over thin redesigns of the other pages.
+
+## Motion direction
+
+e2.vc uses a short logo entrance, clipped type reveals, drifting portraits, and scroll-responsive text. The 8x motion uses those principles to reinforce its own thesis. On the first visit, a warm orange `people.` scene draws the same underline seen in the hero, then lifts away. The hero text and portraits settle into place. The scale statement reveals once; work steps enter in reading order; the business atlas reveals as a group. Menu rows and criterion changes respond briefly to interaction. There is no scroll hijacking or endless background motion. The entrance is skipped on repeat visits and for reduced-motion users; it is not held open to wait for remote photos.
