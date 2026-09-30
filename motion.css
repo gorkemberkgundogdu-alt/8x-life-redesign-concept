@@ -46,3 +46,21 @@ html.motion-enabled.intro-pending .hero h1,html.motion-enabled.intro-pending .he
 
 @media(max-width:600px){.intro{padding:22px}.intro::before{inset:0 22px}.intro-top,.intro-bottom,.intro-word>span{font-size:9px}.intro-word strong{font-size:clamp(78px,21vw,125px)}.intro-word strong::after{height:4px}}
 @media(prefers-reduced-motion:reduce){.intro{display:none!important}.motion-reveal,.work-step.motion-reveal,.surface.motion-reveal{opacity:1;transform:none;transition:none}.hero h1,.hero-bottom,.hero-people,.menu-overlay,.menu-item,.quality-detail{animation:none!important}.hero-person-back{transform:rotate(-7deg)}.hero-person-front{transform:rotate(6deg)}}
+
+/* Keep the menu as one quiet, page-local index. */
+.menu-overlay{padding:0 5vw 30px}
+.menu-heading{justify-content:flex-start;padding:24px 0 18px}
+.menu-heading span{font:11px 'DM Mono',monospace;letter-spacing:.08em;color:#aeb8ad}
+.menu-item{position:relative;grid-template-columns:8% minmax(0,1fr) 32px;min-height:clamp(88px,11vh,126px);padding:8px 0;overflow:hidden;background:transparent;color:var(--paper);transition:color .2s}
+.menu-item:last-of-type{border-bottom:1px solid #5b6259}
+.menu-item::after{content:"";position:absolute;right:0;bottom:0;left:0;height:2px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .32s var(--motion-ease)}
+.menu-item>span{transition:color .2s}
+.menu-item strong{grid-column:2}
+.menu-item b{grid-column:3;transition:color .2s,transform .32s var(--motion-ease)}
+.menu-item:hover,.menu-item:focus-visible{padding-left:0;background:transparent;color:var(--paper);outline:none}
+.menu-item:hover>span,.menu-item:focus-visible>span{color:var(--accent)}
+.menu-item:hover::after,.menu-item:focus-visible::after{transform:scaleX(1)}
+.menu-item:hover b,.menu-item:focus-visible b{color:var(--accent);transform:translate(3px,-3px)}
+.menu-item:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media(max-width:900px){.menu-item{grid-template-columns:45px minmax(0,1fr) 25px}.menu-item strong{grid-column:2}.menu-item b{grid-column:3}}
+@media(max-width:600px){.menu-overlay{padding:0 22px 24px}.menu-heading{padding:24px 0 16px}.menu-heading span{display:block!important}.menu-item{grid-template-columns:35px minmax(0,1fr) 24px;min-height:92px}.menu-item strong{font-size:clamp(37px,10vw,54px)}.menu-item b{font-size:23px}}
