@@ -10,4 +10,4 @@ The site uses publicly available 8x Careers team portraits. Each portrait links 
 
 Research and rationale are in [research/brief.md](research/brief.md). A camera-on walkthrough outline is in [walkthrough.md](walkthrough.md).
 
-V2 includes a category menu, an editorial workflow, selectable role criteria, and an integrated orange footer. Local browser QA checks 320, 390, 768, and 1440px widths, image loading, menu hover/Escape, keyboard tabs, and horizontal overflow with `node verify-v2.js`.
+V2 includes a category menu, an editorial workflow, selectable role criteria, and an integrated orange footer. Local browser QA checks 320, 390, 768, and 1440px widths, image loading, menu hover/Escape, keyboard tabs, and horizontal overflow with `node verify-v2.js`. `node check-links.js` checks every external destination and the story anchor in a signed-out browser.
