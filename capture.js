@@ -8,6 +8,8 @@ const shots = [
   { name: 'original-manifesto', url: 'https://8x.life/manifesto' },
   { name: 'original-team', url: 'https://8x.life/team' },
   { name: 'reference-talent', url: 'https://e2.vc/talent' },
+  { name: 'reference-team', url: 'https://e2.vc/team' },
+  { name: 'reference-friends', url: 'https://e2.vc/friends' },
   { name: 'redesign', url: 'http://127.0.0.1:4173/' },
 ];
 
