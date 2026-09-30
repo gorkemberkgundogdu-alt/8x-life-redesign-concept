@@ -15,3 +15,8 @@
 .work .workflow>.work-step:hover{padding-left:16px}
 @media(max-width:900px){.work .workflow>.work-step{grid-template-columns:16% 1fr 28%}}
 @media(max-width:600px){.scale>.scale-main{display:block;min-height:0;padding:55px 0 45px}.scale>.scale-foot{align-items:start;flex-direction:column}.work .workflow>.work-step{grid-template-columns:1fr;min-height:0;gap:8px;padding:24px 0}.work .workflow>.work-step:hover{padding-left:0}}
+
+/* The identity block returns to a dark footer beneath the orange invitation. */
+.closing-footer{background:var(--dark);color:var(--paper);border-top:0;margin:150px -3vw -35px;padding:45px 3vw 35px}
+@media(max-width:850px){.closing-footer{margin-left:-22px;margin-right:-22px;padding-left:22px;padding-right:22px}}
+@media(max-width:600px){.closing-footer{margin-top:110px;margin-bottom:-35px;padding-top:35px;padding-bottom:35px}}

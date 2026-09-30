@@ -22,7 +22,7 @@ The lower half of V1's work section used four equal process cards. That turned a
 
 The five business rows in section 03 already gave a useful map of the company, so their structure stayed. The three equal criteria cards in V1 section 04 repeated the same generic device as the workflow. V2 gives Taste, Speed, and 80/20 one shared stage, letting a visitor choose a criterion and read it without fragmenting the message.
 
-The menu is one top-right control opening a full-screen category index. Hover and keyboard focus reveal the warm orange state. The closing section keeps its scale and integrates `8x life` and `The human company` into the orange footer.
+The menu is one top-right control opening a full-screen category index. Hover and keyboard focus reveal the warm orange state. The closing section keeps its scale, then resolves into a dark footer with `8x life` and `The human company`.
 
 ## CTA judgment
 

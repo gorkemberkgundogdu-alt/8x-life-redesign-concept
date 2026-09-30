@@ -16,7 +16,7 @@ Show e2's homepage, team, and talent pages. Explain its sequence: statement, hum
 
 ## 2:15–4:20 — V2 tour
 
-Show the hosted page on desktop and then mobile. Open the top-right menu and hover over a category. The hero makes the manifesto's human thesis immediately relevant to a life site. The 250k+ strip is one visual idea leading into real faces. The work rows turn “human orchestration” into an example. The dark network section maps 8x's businesses. In the expectation section, select Taste, Speed, and 80/20 and explain that they are grounded in one specific job posting. Show the orange footer's integrated brand and the customer CTA, then point out the visible candidate route.
+Show the hosted page on desktop and then mobile. Open the top-right menu and hover over a category. The hero makes the manifesto's human thesis immediately relevant to a life site. The 250k+ strip is one visual idea leading into real faces. The work rows turn “human orchestration” into an example. The dark network section maps 8x's businesses. In the expectation section, select Taste, Speed, and 80/20 and explain that they are grounded in one specific job posting. Show the orange invitation and dark identity footer, then point out the customer CTA and the visible candidate route.
 
 ## 4:20–5:00 — Judgment and next evidence
 
