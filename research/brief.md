@@ -20,7 +20,7 @@ The V1 hero already had a distinct thesis and real team imagery. The orange scal
 
 The lower half of V1's work section used four equal process cards. That turned an operational story into familiar SaaS furniture. V2 reads as four large rows: brief, creators, decisions, results. Alternating type and rule lines create a progression; the small descriptions keep the example legible.
 
-The five business rows in section 03 already gave a useful map of the company, so their structure stayed. The three equal criteria cards in V1 section 04 repeated the same generic device as the workflow. V2 gives Taste, Speed, and 80/20 one shared stage, letting a visitor choose a criterion and read it without fragmenting the message.
+The five business rows in section 03 gave a useful map of the company, but in V2 they repeated the same large-name/small-description/rule pattern as the work rows immediately above. The next revision keeps 02's sequential work story and turns 03 into a typographic atlas. Social is named as the example already explored; LinkedIn, Research, Sales, and Hiring occupy four linked fields with unequal widths, visible descriptions, and no repeated process numbering. The three equal criteria cards in V1 section 04 repeated the same generic device as the workflow. V2 gives Taste, Speed, and 80/20 one shared stage, letting a visitor choose a criterion and read it without fragmenting the message.
 
 The menu is one top-right control opening a full-screen category index. Hover and keyboard focus reveal the warm orange state. The closing section keeps its scale, then resolves into a dark footer with `8x life` and `The human company`.
 

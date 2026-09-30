@@ -16,6 +16,7 @@ const base = 'http://127.0.0.1:4173/';
         brokenImages: [...document.images].filter(img => !img.complete || img.naturalWidth === 0).map(img => img.src),
       }));
       if (layout.page > layout.viewport || layout.brokenImages.length) throw Error(`${width}px layout: ${JSON.stringify(layout)}`);
+      if (await page.locator('.business-atlas .surface').count() !== 4) throw Error(`${width}px atlas should contain four other businesses`);
       await page.getByRole('button', { name: /Menu/ }).click();
       if (await page.locator('.menu-overlay').isHidden()) throw Error(`${width}px menu did not open`);
       if (width === 390) await page.screenshot({ path: path.join(__dirname, 'research', 'screenshots', 'v2-menu-mobile.png') });

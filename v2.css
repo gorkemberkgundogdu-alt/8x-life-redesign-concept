@@ -20,3 +20,26 @@
 .closing-footer{background:var(--dark);color:var(--paper);border-top:0;margin:150px -3vw -35px;padding:45px 3vw 35px}
 @media(max-width:850px){.closing-footer{margin-left:-22px;margin-right:-22px;padding-left:22px;padding-right:22px}}
 @media(max-width:600px){.closing-footer{margin-top:110px;margin-bottom:-35px;padding-top:35px;padding-bottom:35px}}
+
+/* 03 is a company atlas, after 02's sequential work narrative. */
+.system-overline{display:block;margin-bottom:24px;color:#e7a28c;font:500 11px 'DM Mono',monospace;letter-spacing:.075em}
+.business-atlas{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));border-bottom:1px solid #666e65}
+.surface{min-height:clamp(285px,25vw,420px);display:flex;flex-direction:column;gap:35px;padding:28px 28px 25px 0;border-top:1px solid #666e65;transition:background .25s,padding .25s,color .25s}
+.surface:nth-child(1),.surface:nth-child(4){grid-column:span 6}
+.surface:nth-child(2),.surface:nth-child(3){grid-column:span 4}
+.surface:nth-child(1),.surface:nth-child(3){border-right:1px solid #666e65}
+.surface:nth-child(2),.surface:nth-child(4){padding-left:28px}
+.surface:hover,.surface:focus-visible{background:#303a31;padding-left:25px;outline:none}
+.surface:nth-child(2):hover,.surface:nth-child(2):focus-visible,.surface:nth-child(4):hover,.surface:nth-child(4):focus-visible{padding-left:53px}
+.surface-type{color:#afb7ad;font:500 11px 'DM Mono',monospace;letter-spacing:.08em}
+.surface strong{font-size:clamp(57px,7vw,126px);font-weight:500;letter-spacing:-.08em;line-height:.95;margin:auto 0;transition:color .25s}
+.surface:hover strong,.surface:focus-visible strong{color:#e8a28f}
+.surface-bottom{display:flex;justify-content:space-between;align-items:end;gap:15px;font-size:15px;color:#d1d6ce}
+.surface-bottom b{font-size:29px;line-height:1;font-weight:400;color:var(--paper);transition:transform .25s}
+.surface:hover .surface-bottom b,.surface:focus-visible .surface-bottom b{transform:translate(4px,-4px)}
+.system-after{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-top:23px}
+.system-after>span{font:500 11px 'DM Mono',monospace;letter-spacing:.07em;color:#afb7ad}
+.system-after a{font-size:14px;font-weight:600;border-bottom:1px solid #c3c9c1;padding-bottom:5px}
+.system-after a:hover{color:#e8a28f;border-color:#e8a28f}
+@media(max-width:900px){.surface{padding-right:18px}.surface:nth-child(2),.surface:nth-child(4){padding-left:18px}.surface:nth-child(2):hover,.surface:nth-child(2):focus-visible,.surface:nth-child(4):hover,.surface:nth-child(4):focus-visible{padding-left:30px}.surface strong{font-size:clamp(42px,6.5vw,78px)}}
+@media(max-width:600px){.system-overline{margin-bottom:20px;font-size:10px}.business-atlas{grid-template-columns:repeat(2,minmax(0,1fr))}.surface:nth-child(n){grid-column:span 1;min-height:220px;gap:20px;padding:18px 14px 17px 0}.surface:nth-child(even){padding-left:14px}.surface:nth-child(n):hover,.surface:nth-child(n):focus-visible{padding-left:10px}.surface:nth-child(even):hover,.surface:nth-child(even):focus-visible{padding-left:20px}.surface strong{font-size:clamp(25px,7.5vw,39px)}.surface-type{font-size:8px}.surface-bottom{font-size:11px;line-height:1.2;align-items:end}.surface-bottom b{font-size:20px}.system-after{align-items:start;flex-direction:column}.system-after>span{font-size:9px}}
