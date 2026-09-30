@@ -1,38 +1,30 @@
 # Camera-on walkthrough outline (about 5 minutes)
 
-Speak naturally and show the pages as you discuss them. Record with your camera visible. This is a guide, not a script to read verbatim.
+Record this in your own voice with your camera visible. Keep the original, reference, and redesign tabs ready. This outline is a speaking guide, not text to read aloud.
 
-## 0:00–0:45 — The original
+## 0:00–0:50 — Original, desktop and phone
 
-Show 8x.life on desktop, then mobile. The homepage is a directory of business lines and one scale statement. Open the manifesto and team pages. The manifesto has a strong thesis about AI and the human in the loop; the team page names the founders. As a candidate, I can understand the ambition, but cannot picture the day-to-day work, the team, or what the company asks from me.
+Show the 8x.life home, manifesto, and team pages on desktop and mobile. Say what you understood: scale and an interesting human-in-the-loop thesis, but little sense of the people, work, expectations, or tradeoffs of joining. Name the gap from a Product Designer candidate's point of view.
 
-## 0:45–1:30 — Context from the brand and role
+## 0:50–1:35 — What the existing 8x pages reveal
 
-Show 8x Social for Brands: briefs, creators, review, tracking and payment are coordinated in one operation. Show the Product Designer posting: all products, reports to CTO, taste, speed and 80/20. Say that the site needs to connect the big human thesis to this concrete work and these honest role expectations. These details come from public 8x pages; the design does not invent employee quotes, benefits or policies.
+Show 8x Social for Brands and the Product Designer role. Point out the actual flow from brand brief to creator work and measurement, and the role's all-product scope, CTO reporting line, taste, speed, and 80/20 criteria. These became the source of the redesign's content.
 
-## 1:30–2:00 — Reading the e2.vc reference
+## 1:35–2:15 — Read the e2.vc reference
 
-Show e2.vc and its talent page. Describe its confident editorial statement, large typography, fine grid, sparse color, human proof and thematic navigation. Explain the selection: take the hierarchy, rhythm and willingness to have a point of view. Leave the long intro, draggable portfolio, game commands and excess empty space because candidates need a direct path to understanding and applying.
+Show e2's homepage, team, and talent pages. Explain its sequence: statement, human or company proof, then route to action. Call out the editorial type, fine rules, paced whitespace, and menu categories. Explain why you borrowed those principles but kept 8x's orange, warmer language, and direct candidate routes.
 
-## 2:00–4:15 — The redesign
+## 2:15–4:20 — V2 tour
 
-Show the hosted desktop site, then mobile.
+Show the hosted page on desktop and then mobile. Open the top-right menu and hover over a category. The hero makes the manifesto's human thesis immediately relevant to a life site. The 250k+ strip is one visual idea leading into real faces. The work rows turn “human orchestration” into an example. The dark network section maps 8x's businesses. In the expectation section, select Taste, Speed, and 80/20 and explain that they are grounded in one specific job posting. Show the orange footer's integrated brand and the customer CTA, then point out the visible candidate route.
 
-1. The opening says “people are the point,” brings real team imagery into view and makes the life-site purpose clear.
-2. The scale numbers are followed immediately by real people, so 250k is not an abstract boast.
-3. The 8x Social workflow translates “human orchestration” into an understandable example. The business list preserves the umbrella-company breadth already present on the original.
-4. The Product Designer section turns vague culture talk into the role's actual taste, speed and 80/20 criteria. It is explicitly labeled as one role, not a universal rule.
-5. The final call to action leads to live roles, with a direct route to the Product Designer brief. The site does not create a duplicate application form.
+## 4:20–5:00 — Judgment and next evidence
 
-On mobile, show the opening, swipe through the people cards, and scroll the workflow and role section.
+Say why you concentrated on one homepage, kept section 03's useful list, and replaced V1's two sets of generic equal cards. Acknowledge the CTA tradeoff: the customer CTA broadens the ending of a recruiting journey, so candidate routes remain in context. The next content request to 8x would be an approved shipped-decision story, employee quotes, and practical collaboration details. Do not imply these are already known.
 
-## 4:15–5:00 — Tradeoffs and what comes next
+## Before submitting
 
-I prioritized one complete candidate journey over thin redesigns of every page. I would next ask 8x for a real example of a shipped decision, approved employee quotes, and practical collaboration details before adding them. Without that evidence, a prettier “culture” page would be less honest. The current prototype uses public team portraits and sends visitors to the original clips.
-
-## Before submission
-
-- Open the hosted link in an incognito or signed-out browser.
-- Open every external link and check the role and story destinations.
-- Check that the recording includes camera video and audible reasoning.
-- Put the public site in the assignment links field and upload any requested screenshots or files.
+- Open the hosted site in a signed-out or incognito window.
+- Check the role, story, and brand destinations.
+- Make sure the recording includes your camera and audible reasoning.
+- Paste the public site and repository links into the links field. Attach the ZIP and screenshots if the assignment form allows it.

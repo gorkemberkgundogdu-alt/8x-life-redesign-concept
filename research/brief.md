@@ -1,30 +1,33 @@
-# 8x.life redesign — research brief
+# Life at 8x: editorial and design rationale
 
-Observed 2026-09-30. Sources: https://8x.life/, https://8x.life/manifesto, https://8x.life/team, https://www.8x.careers/join/product-designer, https://www.8x.social/en/for-brands, https://e2.vc/, https://e2.vc/talent.
+Observed September 30, 2026. Primary sources: [8x.life](https://8x.life/), [manifesto](https://8x.life/manifesto), [team](https://8x.life/team), [Product Designer role](https://www.8x.careers/join/product-designer), [8x Social for Brands](https://www.8x.social/en/for-brands), and [e2.vc](https://e2.vc/), especially its [team](https://e2.vc/team) and [talent](https://e2.vc/talent) pages. Full-page desktop and mobile captures are in `screenshots/` in the submission archive.
 
-## Current message and candidate gap
+## What a visitor currently takes away
 
-The homepage is a directory of 8x businesses and says 250k+ humans are managed across marketing, engineering and research. The manifesto presents the thesis that AI makes building easier and humans in the loop become scarce. The team page names only the CEO and CTO. A candidate can name the ambition, but cannot picture the work, people, pace, tradeoffs or definition of success.
+The original home is primarily a directory of 8x businesses and a scale claim: 250k+ humans across 50+ countries. Its manifesto has a sharper premise: as AI makes building easier, people become the scarce part of the system. The team page introduces the founders. Together these communicate ambition and breadth, but a candidate still cannot picture the people they might work beside, what the work looks like, or the tradeoffs of joining.
 
-The Product Designer posting contains unusually useful self-selection signals: reporting to the CTO, touching every product, shipping many versions, and making taste, speed and 80/20 decisions. These should inform the life-site journey without implying every role has the same expectations.
+The Product Designer role supplies unusually clear self-selection signals: work across all products, report to the CTO, bring taste, ship quickly, and use 80/20 judgment. The brand page supplies a concrete operation: a brief moving through creators, content, review, distribution, measurement, and payment. The redesign connects these existing facts. It does not manufacture culture claims, testimonials, benefits, or work policies.
 
-## e2.vc reference
+## What e2.vc is actually doing
 
-Its style uses assertive editorial language, oversized sans-serif type, thin grids, cream/black/cobalt contrast, playful motion, people and portfolio proof, and thematic navigation. Its talent page establishes a point of view before the form and shows concrete roles. For 8x, take the editorial hierarchy, grid rhythm and human evidence. Leave the intro animation, drifting portfolio, long empty stretches and game commands; they delay a candidate's answer.
+Its effect comes from sequencing as much as styling. A confident statement establishes a point of view; spare editorial grids and oversized type create pauses; human faces and concrete portfolio or role evidence make the statement credible; navigation behaves like a thematic index. Cream, dark surfaces, cobalt, fine rules, and scale changes reinforce the hierarchy. Its team and talent pages do not present information as a uniform deck of cards.
 
-## Proposed thesis and homepage
+For 8x, I took the thesis-to-evidence-to-action sequence, the deliberate scale shifts, the fine grid, and navigation that names the content. I left the literal cobalt palette, intro animation, draggable portfolio, game-like interactions, and extended empty stretches. 8x has its own warm orange and a more immediate candidate question to answer.
 
-Proposed copy: “AI can build. People make it work.” This translates the manifesto toward the team doing the work. Follow it with verified scale and a plain explanation of the operation.
+## V1 critique and V2 decisions
 
-1. Thesis + real team imagery + scale + open roles.
-2. Real people and team stories, linked to the existing Careers clips.
-3. A tangible example of how 8x Social coordinates people, plus a compact map of the other 8x businesses.
-4. Concrete expectations and tradeoffs grounded in the Product Designer posting.
-5. Honest self-selection: who thrives and who may prefer another environment.
-6. Practical application details and live roles linked to 8x Careers.
+The V1 hero already had a distinct thesis and real team imagery. The orange scale strip carried the right information and color, but its three equal cells felt like a metric component pasted beneath the hero. In V2 it becomes one oversized 250k+ editorial moment, with the 50+ countries explanation and a direct path to the people.
 
-Do not invent testimonials, benefits, work policies or specific workflows. Ask the team for an example of a quick shipped decision, weekly collaboration practices and approved photos/quotes before presenting those as facts.
+The lower half of V1's work section used four equal process cards. That turned an operational story into familiar SaaS furniture. V2 reads as four large rows: brief, creators, decisions, results. Alternating type and rule lines create a progression; the small descriptions keep the example legible.
 
-## Delivery focus
+The five business rows in section 03 already gave a useful map of the company, so their structure stayed. The three equal criteria cards in V1 section 04 repeated the same generic device as the workflow. V2 gives Taste, Speed, and 80/20 one shared stage, letting a visitor choose a criterion and read it without fragmenting the message.
 
-Build one responsive homepage with working links. Verify desktop and 390px mobile, publish publicly, test signed-out access, and record a camera-on walkthrough in the applicant's own voice.
+The menu is one top-right control opening a full-screen category index. Hover and keyboard focus reveal the warm orange state. The closing section keeps its scale and integrates `8x life` and `The human company` into the orange footer.
+
+## CTA judgment
+
+The assignment frames 8x.life as a candidate site. V2's closing CTA targets a potential brand/customer, so it points to the live 8x Social brand page. This creates a real tension: the final action is less focused on candidate conversion. I kept explicit candidate routes in the menu, the Product Designer section, and directly under the primary footer CTA. For an actual recruiting launch, I would test or revisit this hierarchy with 8x before shipping.
+
+## What remains unproven
+
+The prototype uses public 8x Careers portraits and links to existing stories. It needs an approved example of a fast product decision, first-person quotes, and practical details about how the team collaborates before it can make stronger culture claims. The homepage is intentionally prioritized over thin redesigns of the other pages.

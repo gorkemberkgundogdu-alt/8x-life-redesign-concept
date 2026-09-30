@@ -14,9 +14,10 @@ const { chromium } = require('playwright-core');
     documentWidth: document.documentElement.scrollWidth,
     heading: document.querySelector('h1')?.innerText,
     firstPeopleImageLoaded: (() => { const img = document.querySelector('.portrait img'); return img.complete && img.naturalWidth > 0; })(),
-    roleLink: document.querySelector('.closing .button')?.href,
+    primaryCTA: document.querySelector('.closing .button')?.href,
+    candidateCTA: document.querySelector('.closing .under-link')?.href,
   }));
   console.log(JSON.stringify({ status: response.status(), ...result }, null, 2));
   await browser.close();
-  if (response.status() !== 200 || result.documentWidth > result.viewport || !result.firstPeopleImageLoaded) process.exitCode = 1;
+  if (response.status() !== 200 || result.documentWidth > result.viewport || !result.firstPeopleImageLoaded || !result.primaryCTA.includes('/for-brands') || !result.candidateCTA.includes('/join')) process.exitCode = 1;
 })().catch(error => { console.error(error); process.exitCode = 1; });

@@ -10,16 +10,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./v2.css" />
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="8x life, back to top">8x<span class="brand-divider"></span><span class="brand-caption">life</span></a>
-    <nav class="desktop-nav" aria-label="Main navigation">
-      <a href="#people">The people</a><a href="#work">The work</a><a href="#approach">The expectation</a>
-    </nav>
-    <a class="nav-cta" href="https://www.8x.careers/join" target="_blank" rel="noopener noreferrer">Open roles <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" type="button" aria-controls="site-menu" aria-expanded="false"><span class="menu-toggle-label">Menu</span><span class="menu-symbol" aria-hidden="true">✳</span></button>
   </header>
+  <nav class="menu-overlay" id="site-menu" aria-label="Main navigation" hidden>
+    <div class="menu-heading"><span>EXPLORE 8X</span><span>CHOOSE A DIRECTION</span></div>
+    <a class="menu-item" href="#people"><span>01</span><strong>The people</strong><small>Meet the humans behind 8x</small><b aria-hidden="true">↗</b></a>
+    <a class="menu-item" href="#work"><span>02</span><strong>The work</strong><small>What human orchestration means</small><b aria-hidden="true">↗</b></a>
+    <a class="menu-item" href="#network"><span>03</span><strong>The network</strong><small>One thesis, many surfaces</small><b aria-hidden="true">↗</b></a>
+    <a class="menu-item" href="#approach"><span>04</span><strong>The expectation</strong><small>A closer look at product design</small><b aria-hidden="true">↗</b></a>
+    <div class="menu-exits"><a href="https://www.8x.careers/join" target="_blank" rel="noopener noreferrer">Find your role ↗</a><a href="https://www.8x.social/en/for-brands" target="_blank" rel="noopener noreferrer">For brands ↗</a></div>
+  </nav>
 
   <main id="main">
     <section class="hero" id="top" aria-labelledby="hero-title">
@@ -34,9 +40,9 @@
     </section>
 
     <section class="scale strip" aria-label="8x in numbers">
-      <div><strong>250k<span>+</span></strong><span>humans managed</span></div>
-      <div><strong>50<span>+</span></strong><span>countries</span></div>
-      <p>Every number represents a person. Here are some of the people making the system work.</p>
+      <div class="scale-head"><span>THE SCALE OF THE HUMAN LAYER</span><span>250,000+ / 50+ COUNTRIES</span></div>
+      <div class="scale-main"><strong>250k<sup>+</sup></strong><p>humans managed<br />across <em>50+ countries.</em></p></div>
+      <div class="scale-foot"><span>Marketing / Engineering / Research / And more</span><a href="#people">Start with the people <span aria-hidden="true">↓</span></a></div>
     </section>
 
     <section class="people" id="people" aria-labelledby="people-title">
@@ -55,17 +61,17 @@
       <div class="section-body">
         <h2 id="work-title">“Human orchestration”<br />is a big phrase.<br /><span>Here’s what it means.</span></h2>
         <p class="lead">In 8x Social, a brand’s brief becomes creator work, content review, distribution, measurement and payment. Software coordinates the flow. People make every part of it real.</p>
-        <div class="workflow" aria-label="Example workflow in 8x Social">
-          <div><span class="step-number">01 / INPUT</span><strong>Brand brief</strong><p>A goal and an audience.</p></div>
-          <div><span class="step-number">02 / PEOPLE</span><strong>Creator network</strong><p>Real people, making and posting.</p></div>
-          <div><span class="step-number">03 / SYSTEM</span><strong>Review + tracking</strong><p>Quality and performance in view.</p></div>
-          <div><span class="step-number">04 / OUTCOME</span><strong>Reach + payment</strong><p>Results delivered; people paid.</p></div>
-        </div>
-        <a class="text-link" href="https://www.8x.social/en/for-brands" target="_blank" rel="noopener noreferrer">See the real product <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="workflow" aria-label="Example workflow in 8x Social">
+        <div class="work-step"><span class="step-number">01 / INPUT</span><strong>One brief.</strong><p>A brand sets the goal and the audience.</p></div>
+        <div class="work-step"><span class="step-number">02 / PEOPLE</span><strong>Real creators.</strong><p>People make and post in their own voice.</p></div>
+        <div class="work-step"><span class="step-number">03 / SYSTEM</span><strong>Many decisions.</strong><p>Briefing, review, performance and iteration.</p></div>
+        <div class="work-step"><span class="step-number">04 / OUTCOME</span><strong>Visible results.</strong><p>Reach is measured. Creators are paid.</p></div>
+        <a class="workflow-link" href="https://www.8x.social/en/for-brands" target="_blank" rel="noopener noreferrer">Explore 8x Social <span aria-hidden="true">↗</span></a>
       </div>
     </section>
 
-    <section class="system" aria-labelledby="system-title">
+    <section class="system" id="network" aria-labelledby="system-title">
       <div class="section-label"><span>03</span><span>ONE THESIS, MANY SURFACES</span></div>
       <div class="system-content">
         <h2 id="system-title">The human layer<br />goes further.</h2>
@@ -86,22 +92,25 @@
         <div class="eyebrow">A SPECIFIC EXAMPLE: PRODUCT DESIGNER</div>
         <h2 id="approach-title">The job posting<br />doesn’t hide the ask.</h2>
         <p class="lead">One designer. Every product we ship. Reporting to the CTO. The brief names three things plainly:</p>
-        <div class="principles">
-          <article><span>01</span><h3>Taste</h3><p>Your work has to carry the judgment. The posting calls it non-negotiable.</p></article>
-          <article><span>02</span><h3>Speed</h3><p>Many versions shipped, instead of waiting on a single perfect one.</p></article>
-          <article><span>03</span><h3>80/20</h3><p>Know which part of a design matters most, and put your energy there.</p></article>
+        <div class="quality-switcher">
+          <div class="quality-tabs" role="tablist" aria-label="Product Designer qualities">
+            <button id="tab-taste" role="tab" aria-controls="quality-detail" aria-selected="true" data-quality="taste" type="button"><span>01</span>Taste</button>
+            <button id="tab-speed" role="tab" aria-controls="quality-detail" aria-selected="false" data-quality="speed" type="button"><span>02</span>Speed</button>
+            <button id="tab-judgment" role="tab" aria-controls="quality-detail" aria-selected="false" data-quality="judgment" type="button"><span>03</span>80/20</button>
+          </div>
+          <div class="quality-detail" id="quality-detail" role="tabpanel" aria-labelledby="tab-taste"><span>01 / FROM THE ROLE BRIEF</span><p>Taste is visible in the work. The brief calls it non-negotiable.</p><a href="https://www.8x.careers/join/product-designer" target="_blank" rel="noopener noreferrer">Read the full brief ↗</a></div>
         </div>
         <div class="fit-note"><span class="asterisk" aria-hidden="true">✳</span><p>This role spans every product 8x ships. If you enjoy moving between complex problems, making the call and seeing your work live, there is room to make a real mark here. The breadth and pace are worth weighing before you apply.</p><a class="text-link" href="https://www.8x.careers/join/product-designer" target="_blank" rel="noopener noreferrer">Read the Product Designer role <span aria-hidden="true">↗</span></a></div>
       </div>
     </section>
 
-    <section class="closing" aria-labelledby="closing-title">
-      <div class="section-label"><span>05</span><span>YOUR NEXT MOVE</span></div>
-      <h2 id="closing-title">Want to do<br /><em>the work?</em></h2>
-      <div class="closing-bottom"><p>Find a role, read the brief and show us what you have built. The Product Designer application takes about fifteen minutes and can be resumed later.</p><div class="closing-actions"><a class="button" href="https://www.8x.careers/join" target="_blank" rel="noopener noreferrer">Explore open roles <span aria-hidden="true">↗</span></a><a class="under-link" href="https://www.8x.careers/join/product-designer" target="_blank" rel="noopener noreferrer">Product Designer brief ↗</a></div></div>
-    </section>
   </main>
-
-  <footer class="footer"><a class="footer-logo" href="#top">8x<span>life</span></a><p>The human company.</p><div><a href="https://8x.life/manifesto" target="_blank" rel="noopener noreferrer">Original manifesto ↗</a><a href="https://www.8x.careers/join" target="_blank" rel="noopener noreferrer">Careers ↗</a></div><small>Independent redesign concept · 2026</small></footer>
+  <footer class="closing" aria-labelledby="closing-title">
+    <div class="section-label"><span>05</span><span>WHAT'S NEXT</span></div>
+    <h2 id="closing-title">Good work<br /><em>takes people.</em></h2>
+    <div class="closing-bottom"><p>Brief creators, review content, track results and manage payouts in one place. See how 8x Social helps brands work with people at scale.</p><div class="closing-actions"><a class="button" href="https://www.8x.social/en/for-brands" target="_blank" rel="noopener noreferrer">See 8x Social for brands <span aria-hidden="true">↗</span></a><a class="under-link" href="https://www.8x.careers/join" target="_blank" rel="noopener noreferrer">Want to join the team? Find your role ↗</a></div></div>
+    <div class="closing-footer"><a class="footer-logo" href="#top">8x<span>life</span></a><p>The human company.</p><div><a href="https://8x.life/manifesto" target="_blank" rel="noopener noreferrer">Manifesto ↗</a><a href="https://www.8x.careers/join" target="_blank" rel="noopener noreferrer">Careers ↗</a></div><small>Independent redesign concept · 2026</small></div>
+  </footer>
+  <script src="./main.js" defer></script>
 </body>
 </html>
